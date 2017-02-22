@@ -1,0 +1,61 @@
+@charset "UTF-8";
+header .sample {
+  width: 100%;
+  height: 500px; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+p.desc {
+  text-align: center; }
+
+#box {
+  text-align: center;
+  -webkit-flex-direction: row;
+  flex-direction: row; }
+  #box div.textbox {
+    display: inline-block;
+    background-color: #6C1A4B;
+    width: 25%;
+    margin: 10px; }
+    #box div.textbox h2 {
+      color: white;
+      font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; }
+    #box div.textbox p {
+      color: white;
+      padding: 3px;
+      text-align: left;
+      font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; }
+
+footer {
+  text-align: center;
+  height: 30%; }
+  footer p {
+    padding: 0 0 10px 0; }
+  footer a {
+    background-color: #6C1A4B;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 2px solid #6C1A4B;
+    border-radius: 10px; }
+
+@media (max-width: 768px) {
+  header .sample {
+    width: 100%;
+    height: 250px; }
+
+  #box {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+    #box div.textbox {
+      -webkit-flex: 1;
+      flex: 1;
+      width: 50%;
+      margin: 10 auto; } }
+
+/*# sourceMappingURL=style.css.map */
